@@ -50,7 +50,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TBusiness");
+                    b.ToTable("TBusiness", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TCart", b =>
@@ -82,7 +82,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TCart");
+                    b.ToTable("TCart", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TDelivery", b =>
@@ -112,7 +112,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TDelivery");
+                    b.ToTable("TDelivery", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TProducts", b =>
@@ -143,7 +143,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasIndex("BusinessId");
 
-                    b.ToTable("TProducts");
+                    b.ToTable("TProducts", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TPurchase", b =>
@@ -181,7 +181,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TPurchase");
+                    b.ToTable("TPurchase", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TUserInfo", b =>
@@ -224,7 +224,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasIndex("userId");
 
-                    b.ToTable("TUserInfo");
+                    b.ToTable("TUserInfo", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TUsers", b =>
@@ -261,7 +261,7 @@ namespace YouDeliverAPI.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("TUsers");
+                    b.ToTable("TUsers", (string)null);
                 });
 
             modelBuilder.Entity("YouDeliverAPI.Models.TBusiness", b =>
